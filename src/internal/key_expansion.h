@@ -19,10 +19,22 @@ static inline word sub_word(word in) {
             (sbox[(in >>  0) & 0xFFu] <<  0);
 }
 
-static word rcon[16] = {
-    0x01000000u, 0x02000000u, 0x04000000u, 0x08000000u,
-    0x10000000u, 0x20000000u, 0x40000000u, 0x80000000u,
-    0x1b000000u, 0x36000000u
+static const word rcon[15] = {
+    0x00000000,
+    0x01000000,
+    0x02000000,
+    0x04000000,
+    0x08000000,
+    0x10000000,
+    0x20000000,
+    0x40000000,
+    0x80000000,
+    0x1b000000,
+    0x36000000,
+    0x6c000000,
+    0xd8000000,
+    0xab000000,
+    0x4d000000
 };
 
 word* key_expansion(byte* key, byte Nk, byte Nr);
