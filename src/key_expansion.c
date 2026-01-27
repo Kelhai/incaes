@@ -1,4 +1,4 @@
-#include "incaes/key_expansion.h"
+#include "internal/key_expansion.h"
 #include <stdlib.h>
 
 word* key_expansion(byte* key, byte Nk, byte Nr) {

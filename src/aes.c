@@ -1,6 +1,6 @@
 #include "incaes/aes.h"
-#include "incaes/cipher.h"
-#include "incaes/key_expansion.h"
+#include "internal/cipher.h"
+#include "internal/key_expansion.h"
 #include <stdlib.h>
 
 block aes_128(block in, byte* key) {

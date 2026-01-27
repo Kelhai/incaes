@@ -1,8 +1,12 @@
+#ifndef AES_INTERNAL
+#error "This header is internal and not part of the public API"
+#endif
+
 #ifndef KEY_EXPANSION_
 #define KEY_EXPANSION_
 
-#include "def.h"
-#include "incaes/aes_table.h"
+#include "incaes/def.h"
+#include "aes_table.h"
 
 static inline word rot_word(word in) {
     return (in << 8) | (in >> 24);

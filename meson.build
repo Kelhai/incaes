@@ -11,6 +11,6 @@ project(
 inc = include_directories('include')
 
 subdir('src')
-#subdir('examples')
+subdir('examples')
 subdir('test')
 

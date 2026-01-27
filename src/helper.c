@@ -1,4 +1,4 @@
-#include "incaes/helper.h"
+#include "internal/helper.h"
 #include <stdlib.h>
 
 smatrix alloc_smatrix(void) {

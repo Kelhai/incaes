@@ -1,6 +1,6 @@
 #include "incaes/def.h"
-#include "incaes/cipher.h"
-#include "incaes/helper.h"
+#include "internal/cipher.h"
+#include "internal/helper.h"
 
 /*
  *  Preconditions:

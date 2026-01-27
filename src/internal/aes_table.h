@@ -1,7 +1,11 @@
+#ifndef AES_INTERNAL
+#error "This header is internal and not part of the public API"
+#endif
+
 #ifndef AES_TABLE_
 #define AES_TABLE_
 
-#include "def.h"
+#include "incaes/def.h"
 
 static byte sbox[256] = {
     0x63u, 0x7cu, 0x77u, 0x7bu, 0xf2u, 0x6bu, 0x6fu, 0xc5u, 0x30u, 0x01u, 0x67u, 0x2bu, 0xfeu, 0xd7u, 0xabu, 0x76u,

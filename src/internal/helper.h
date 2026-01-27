@@ -1,7 +1,11 @@
+#ifndef AES_INTERNAL
+#error "This header is internal and not part of the public API"
+#endif
+
 #ifndef HELPER_H_
 #define HELPER_H_
 
-#include "def.h"
+#include "incaes/def.h"
 
 smatrix alloc_smatrix(void);
 void free_smatrix(smatrix* in);

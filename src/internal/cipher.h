@@ -1,3 +1,7 @@
+#ifndef AES_INTERNAL
+#error "This header is internal and not part of the public API"
+#endif
+
 #ifndef CIPHER_H_
 #define CIPHER_H_
 
