@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 word* key_expansion(byte* key, byte Nk, byte Nr) {
-    word* w = calloc(4 * (Nr + 1), sizeof(word));
+    word* w = calloc(Nk * (Nr + 1), sizeof(word));
     if (!w) return NULL;
 
     int i;

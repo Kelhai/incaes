@@ -4,8 +4,6 @@
 #include "internal/aes_table.h"
 #include "internal/math.h"
 
-#include <stdio.h>
-
 /*
  *  AES-128:
  *      Nr = 10

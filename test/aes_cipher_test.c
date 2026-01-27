@@ -104,6 +104,9 @@ void test_cipher_aes128() {
     for (int i = 0; i < 16; i++) {
         ASSERT_EQ(output[i], expected_ciphertext[i]);
     }
+
+    free(output);
+    free(w);
 }
 
 
