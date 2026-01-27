@@ -10,7 +10,7 @@ block aes_128(block in, byte* key) {
     word *w = key_expansion(key, Nk, Nr);
     if (!w) return NULL;
     
-    block out = cipher(in, Nr, Nk, w);
+    block out = cipher(in, Nr, w);
 
     free(w);
     return out;
@@ -23,7 +23,7 @@ block aes_192(block in, byte* key) {
     word *w = key_expansion(key, Nk, Nr);
     if (!w) return NULL;
     
-    block out = cipher(in, Nr, Nk, w);
+    block out = cipher(in, Nr, w);
 
     free(w);
     return out;
@@ -36,7 +36,7 @@ block aes_256(block in, byte* key) {
     word *w = key_expansion(key, Nk, Nr);
     if (!w) return NULL;
     
-    block out = cipher(in, Nr, Nk, w);
+    block out = cipher(in, Nr, w);
 
     free(w);
     return out;

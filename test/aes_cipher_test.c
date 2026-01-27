@@ -99,7 +99,7 @@ void test_cipher_aes128() {
 
     byte expected_ciphertext[] = { 0x39u, 0x25u, 0x84u, 0x1du, 0x02u, 0xdcu, 0x09u, 0xfbu, 0xdcu, 0x11u, 0x85u, 0x97u, 0x19u, 0x6au, 0x0bu, 0x32u };
 
-    block output = cipher(plaintext, 10, 4, w);
+    block output = cipher(plaintext, 10, w);
 
     for (int i = 0; i < 16; i++) {
         ASSERT_EQ(output[i], expected_ciphertext[i]);
