@@ -1,8 +1,12 @@
 test_exe = executable(
   'aes_tests',
-  #  'test_vectors.c',
-  dependencies: aes_dep
+  'aes_kat_test.c',
+  dependencies: aes_dep,
+  include_directories: [
+    inc,
+    include_directories('../src')
+  ]
 )
 
-test('aes test vectors', test_exe)
+test('AES test vectors', test_exe)
 

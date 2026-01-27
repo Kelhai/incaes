@@ -1,6 +1,7 @@
-executable(
-  'aes_encrypt',
-  'aes_encrypt.c',
-  dependencies: aes_dep
+aes_example = executable(
+  'aes128_example',
+  'aes128_example.c',
+  dependencies: aes_dep,
+  include_directories: inc
 )
 

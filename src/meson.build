@@ -1,5 +1,8 @@
 aes_sources = [
-  'cipher.c'
+  'aes.c',
+  'cipher.c',
+  'helper.c',
+  'key_expansion.c'
 ]
 
 aes_lib = library(

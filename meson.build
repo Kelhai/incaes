@@ -12,5 +12,5 @@ inc = include_directories('include')
 
 subdir('src')
 #subdir('examples')
-#subdir('test')
+subdir('test')
 
