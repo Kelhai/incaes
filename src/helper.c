@@ -11,7 +11,7 @@ smatrix alloc_smatrix(void) {
         out[i] = calloc(4, sizeof(byte));
         if (!out[i]) {
             for (int j = i-1; j >= 0; j--) {
-                free(out[i]);
+                free(out[j]);
             }
             free(out);
             return NULL;
@@ -39,8 +39,8 @@ void free_block(block in) {
 // See: FIPS-197:3.4
 smatrix block_to_smatrix(block in) {
     smatrix out = alloc_smatrix();
-    for (int r = 0; r < 3; r++) {
-        for (int c = 0; c < 3; c++) {
+    for (int r = 0; r < 4; r++) {
+        for (int c = 0; c < 4; c++) {
             out[r][c] = in[r + 4 * c];
         }
     }
@@ -50,8 +50,8 @@ smatrix block_to_smatrix(block in) {
 // See: FIPS-197:3.4
 block smatrix_to_block(smatrix in) {
     block out = alloc_block();
-    for (int c = 0; c < 3; c++) {
-        for (int r = 0; r < 3; r++) {
+    for (int r = 0; r < 4; r++) {
+        for (int c = 0; c < 4; c++) {
             out[r + 4 * c] = in[r][c];
         }
     }

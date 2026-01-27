@@ -24,3 +24,4 @@ word* key_expansion(byte* key, byte Nk, byte Nr) {
     }
     return w;
 }
+
