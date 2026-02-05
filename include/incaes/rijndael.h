@@ -1,5 +1,5 @@
-#ifndef AES_H_
-#define AES_H_
+#ifndef RIJNDAEL_H_
+#define RIJNDAEL_H_
 
 #include "def.h"
 

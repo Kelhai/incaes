@@ -2,7 +2,7 @@ inc = include_directories('../include')
 internal_inc = include_directories('../src')
 test_inc = include_directories('.')
 
-tests = ['aes_kat_test', 'aes_cipher_test']
+tests = ['aes_kat_test', 'aes_cipher_test', 'aes_e2e_test']
 
 foreach t : tests
   exe = executable(

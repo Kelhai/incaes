@@ -1,4 +1,4 @@
-#include "incaes/aes.h"
+#include "incaes/rijndael.h"
 #include "internal/cipher.h"
 #include "internal/key_expansion.h"
 #include <stdlib.h>

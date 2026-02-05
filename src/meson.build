@@ -1,5 +1,5 @@
 aes_sources = [
-  'aes.c',
+  'rijndael.c',
   'cipher.c',
   'key_expansion.c',
   'helper.c',
