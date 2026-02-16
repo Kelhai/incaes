@@ -95,11 +95,16 @@ void shift_rows(smatrix s) {
     }
 }
 
+static inline int mod(int a, int b) {
+    int r = a % b;
+    return r < 0 ? r + b : r;
+}
+
 void inv_shift_rows(smatrix s) {
     byte tmp[4];
     for (int r = 0; r < 4; r++) {
         for (int c = 0; c < 4; c++) {
-            tmp[c] = s[r][(c-r) % 4];
+            tmp[c] = s[r][mod(c-r, 4)];
         }
         for (int c = 0; c < 4; c++) {
             s[r][c] = tmp[c];
